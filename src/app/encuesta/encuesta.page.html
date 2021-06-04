@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Encuesta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form (ngSubmit)="logForm()">
+
+    <ion-item>
+      <ion-label>Eres...</ion-label>
+      <ion-select [(ngModel)]="dedicacion" name="dedicacion">
+        <ion-select-option value="lector">Lector</ion-select-option>
+        <ion-select-option value="escritor">Escritor</ion-select-option>
+        <ion-select-option value="ambos">Ambos</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-list>
+      <ion-radio-group [(ngModel)]="hora" name="hora">
+        <ion-list-header>
+          <ion-label>
+            Horas que pasas aquí
+          </ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>De 0 a 2</ion-label>
+          <ion-radio value="Pocas horas"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>De 3 a 4</ion-label>
+          <ion-radio value="Normal de horas"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>De 5 a mas</ion-label>
+          <ion-radio value="Demasiadas horas"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+    <ion-button type="submit" expand="block" fill="outline">Enviar</ion-button>
+
+  </form>
+
+    
+</ion-content>

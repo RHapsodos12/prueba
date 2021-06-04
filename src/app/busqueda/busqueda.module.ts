@@ -4,18 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TabsPageRoutingModule } from './tabs-routing.module';
+import { BusquedaPageRoutingModule } from './busqueda-routing.module';
 
-import { TabsPage } from './tabs.page';
-
+import { BusquedaPage } from './busqueda.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TabsPageRoutingModule
+    BusquedaPageRoutingModule
   ],
-  declarations: [TabsPage]
+  declarations: [BusquedaPage]
 })
-export class TabsPageModule {}
+export class BusquedaPageModule {}
